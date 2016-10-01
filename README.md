@@ -3,6 +3,9 @@ Taller para JSConfCo 2016 acerca de como hacer aplicaciones para el command line
 
 ## Antes de empezar
 
+Debes tener un systema con bash. Puede ser Mac o Linux, o Windows 10 con
+[bash habilitado](http://stackoverflow.com/questions/36352627/how-to-enable-bash-in-windows-10-developer-preview).
+
 Debes tener installado node.js v4+. Si no lo tiene, [descárgalo aquí](https://nodejs.org/en/download/).
 
 ```bash
