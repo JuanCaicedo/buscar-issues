@@ -22,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/JuanCaicedo/buscar-issues/issues"
   },
-  "homepage": "https://github.com/JuanCaicedo/buscar-issues#readme"
+  "engines": {
+    "node": ">=4.4.5"
+  },
+  "homepage": "https://github.com/JuanCaicedo/buscar-issues#readme",
+  "dependencies": {
+    "bluebird": "3.4.6",
+    "commander": "2.9.0",
+    "github": "3.1.1",
+    "inquirer": "1.1.3"
+  }
 }
