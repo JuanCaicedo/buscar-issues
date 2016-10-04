@@ -99,3 +99,17 @@ Si el usuario no le pasa un repo a la aplicación, utiliza la función `prompt` 
 inquirer para preguntarles que repo quieren.
 
 Inquirer usa promesas.
+
+# 4. Validar argumentos
+
+Aun existe la posibilidad de que el usuario no le de un repo al programa. Si le
+dan una respuesta en blanco a inquirer.
+
+En node se puede usar la funcion `process.exit()` para terminar la ejecución de
+un programa. Este methodo functiona igual que el `exit` de Unix. Pasarle un
+valor de `0` significa que el programa termino sin ningun problema, y un valor
+de `1` significa que hubo algun error.
+
+Después de recibir una respuesta de inquirer, revisa que el usuario pasó un
+valor para repo. Si no, sal del processo con `1` y usa `console.error` para
+decirle al usuario que el repo es necessario.
