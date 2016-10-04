@@ -86,4 +86,16 @@ especificar los argumentos que usará tu programa de un modo más simple.
 Usa la función [option](https://github.com/tj/commander.js/#option-parsing) de
 commander para especificar que `buscar-issues` tiene que recibir un argumento
 `-r` o `--repo` que sea el nombre del usario y repo (por ejemplo
-juancaicedo/buscar-issues).
+juancaicedo/buscar-issues). Después lee el repo desde commander y imprímelo a la
+pantalla.
+
+# 3. Interactuar con el usuario
+
+Para recibir inputs del usuario de un modo más activo, usaremos otro modulo
+llamado [Inquirer.js](https://github.com/sboudrias/Inquirer.js). Inquirer te
+deja ponerle mensajes al usuario y grabar su respuestas.
+
+Si el usuario no le pasa un repo a la aplicación, utiliza la función `prompt` de
+inquirer para preguntarles que repo quieren.
+
+Inquirer usa promesas.
