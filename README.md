@@ -1,7 +1,4 @@
-# buscar-issues
-Taller para JSConfCo 2016 acerca de como hacer aplicaciones para el command line
-
-## Antes de empezar
+# Antes de empezar
 
 Debes tener un systema con bash. Puede ser Mac o Linux, o Windows 10 con
 [bash habilitado](http://stackoverflow.com/questions/36352627/how-to-enable-bash-in-windows-10-developer-preview).
@@ -13,11 +10,11 @@ $ git clone https://github.com/JuanCaicedo/buscar-issues.git
 $ npm install
 ```
 
-## Hello-world
+# Hello-world
 
 Has un archivo `index.js` que escriba `'hello world'` en la terminal.
 
-##### Hashbang/shebang
+#### Hashbang/shebang
 
 En Unix, todo archivo puede tener una linea al comienzo que le dice al systema
 como ejecutarlo. Si quieres, puedes [leer más aquí](https://en.wikipedia.org/wiki/Shebang_(Unix)).
@@ -31,7 +28,7 @@ esto no es javascript, es bash y no sera ejecutado por node)
 
 Ahora puedes ejecutar `$ ./index.js`.
 
-##### npm bin y npm link
+#### npm bin y npm link
 
 Nos interesa poder acceder este script desde cualquier parte. Eso se puede hacer
 añadiendole la propriedad `bin` a nuestro `package.json`. Npm usa esta
@@ -58,7 +55,7 @@ $ npm link <nombre>
 lo cual creará un symlink desde el `node_modules` de ese folder al symlink
 global. Con eso podrás ejecutar tu aplicación con `$ <nombre>`.
 
-##### Possible error
+#### Possible error
 
 Si ves un error que diga
 
