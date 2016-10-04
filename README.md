@@ -114,7 +114,7 @@ Después de recibir una respuesta de inquirer, revisa que el usuario pasó un
 valor para repo. Si no, sal del processo con `1` y usa `console.error` para
 decirle al usuario que el repo es necessario.
 
-# 5. Buscar los issues de github
+# 5. Buscar los issues en github
 
 Ahora que estamos seguros que tendremos un repo, podemos usar el API de github
 para buscar todos los issues de ese repo. En ves de usar el API directamente,
@@ -135,4 +135,31 @@ Luego usa la función `map` de un array para sacar solo el título de cada issue
 
 Finalmente, escribe todos los títulos a la pantalla. En Unix, varios resultados
 deben estar separados por el carácter de nueva linea (\n). Puedes o usar otro
-`map` con `console.log`, o puedes usar la funcion `join()` de un array.
+`map` con `console.log`, o puedes usar la función `join()` de un array.
+
+# 6. Leer multiples repos desde stdin
+
+La mayoría de aplicaciónes de Unix puden recibir datos o por argumentos o desde
+stdin. Esto es muy importante, hace que tus aplicaciónes puedan interactuar con
+otras aplicaciónes para formar programas más complejos, como piezas de lego.
+
+Un modo de leer de stdin es con el modulo `readline`, el cual viene incluido con
+node. Los docs estan
+[aquí](https://nodejs.org/dist/latest-v4.x/docs/api/readline.html).
+
+Crea un interfaz con `input:process.stdin`. Escucha cada evento tipo `'line'`.
+El argumento que le pasará ese evento a su listener es el nombre de un repo. Usa
+las mismas funciones que escribiste antes para buscar los issues de ese repo y
+imprimirlos a la pantalla.
+
+Puedes ensayar esto con un solo repo haciendo
+
+```bash
+$ echo "spanishdict/example-dfp-line-item-generator" | gh-pr
+```
+
+Y para varios repos
+
+```bash
+$ cat repos.txt | gh-pr
+```
