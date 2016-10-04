@@ -10,7 +10,7 @@ $ git clone https://github.com/JuanCaicedo/buscar-issues.git
 $ npm install
 ```
 
-# Hello-world
+# 1. Hello-world
 
 Has un archivo `index.js` que escriba `'hello world'` en la terminal.
 
@@ -72,3 +72,18 @@ export PATH="./node_modules/.bin:$PATH"
 
 Lo puedes añadir a tu `~/.profile` para no repetirlo con cada nueva session de
 bash.
+
+# 2. Leer argumentos del command line
+
+En Node es acceder a los argumentos que le pasó el usuario al programa. Se puede
+hacer directamente con `process.argv`, pero eso significa que el usuario tendrá
+que memorizarse que argumentos requiere el programa y en que orden.
+
+Existen muchos módulos para facilitar el proceso, nosotros usaremos
+[commander.js](https://github.com/tj/commander.js/). Este modulo te deja
+especificar los argumentos que usará tu programa de un modo más simple.
+
+Usa la función [option](https://github.com/tj/commander.js/#option-parsing) de
+commander para especificar que `buscar-issues` tiene que recibir un argumento
+`-r` o `--repo` que sea el nombre del usario y repo (por ejemplo
+juancaicedo/buscar-issues).
