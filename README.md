@@ -23,4 +23,10 @@ deben estar separados por el carácter de nueva línea (\n). Puedes o usar otro
 
 Al final podrás ejecutar
 `$ buscar-issues --repo spanishdict/example-dfp-line-item-generator` y ver una
-lista de issues.
+lista de issues. Deberías ver
+
+```
+get scripts/create-associations.js working somehow
+`argv.offset` undefined
+Got error when run npm install
+```
