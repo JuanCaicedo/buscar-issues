@@ -9,3 +9,6 @@ inquirer para preguntarles que repo quieren.
 
 Inquirer usa promesas. Aquerdate de poner una función de `catch` al final de las
 cadenas de promesas para coger los errores.
+
+Al final deberías poder ejecutar `$ buscar-issues`, ver un mensaje pidiendote un
+repo, y decirle `spanishdict/example-dfp-line-item-generator`.
