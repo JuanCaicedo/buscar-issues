@@ -9,16 +9,16 @@ sigue cada uno de los pasos.
 
 # Antes de empezar
 
-Deberías tener un sistema con bash. Puede ser Mac o Linux, o Windows 10 con
+- Deberías tener un sistema con bash. Puede ser Mac o Linux, o Windows 10 con
 [bash habilitado](http://stackoverflow.com/questions/36352627/how-to-enable-bash-in-windows-10-developer-preview).
 
-Deberías tener instalado node.js v4+. Si no lo tiene,
+- Deberías tener instalado node.js v4+. Si no lo tiene,
 [descárgalo aquí](https://nodejs.org/en/download/).
 
-```bash
-$ git clone https://github.com/JuanCaicedo/buscar-issues.git
-$ npm install
-```
+    ```bash
+    $ git clone https://github.com/JuanCaicedo/buscar-issues.git
+    $ npm install
+    ```
 
-Debrías entender como funcionan
+- Debrías entender como funcionan
 [las promises](http://bluebirdjs.com/docs/why-promises.html).
