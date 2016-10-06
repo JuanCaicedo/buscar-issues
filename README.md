@@ -7,4 +7,5 @@ deja ponerle mensajes al usuario y grabar su respuestas.
 Si el usuario no le pasa un repo a la aplicación, utiliza la función `prompt` de
 inquirer para preguntarles que repo quieren.
 
-Inquirer usa promesas.
+Inquirer usa promesas. Aquerdate de poner una función de `catch` al final de las
+cadenas de promesas para coger los errores.
