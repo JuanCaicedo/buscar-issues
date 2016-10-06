@@ -9,5 +9,8 @@ valor de `0` significa que el programa terminó sin ningun problema, y un valor
 de `1` significa que hubo algún error.
 
 Después de recibir una respuesta de inquirer, revisa que el usuario pasó un
-valor para repo. Si no, sal del processo con `1` y usa `console.error` para
+valor para `repo`. Si no, sal del processo con `1` y usa `console.error` para
 decirle al usuario que el repo es necesario.
+
+Deberías poder ejecutar `$ buscar-issues`, no darle ningún repo, y luego ver un
+error.
