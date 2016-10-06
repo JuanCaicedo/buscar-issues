@@ -14,7 +14,8 @@ esto no es javascript, es bash y no sera ejecutado por node)
 #! /usr/bin/env node
 ```
 
-Ahora puedes ejecutar `$ ./index.js`.
+Ahora puedes ejecutar `$ ./index.js`. Si recibes un error de permisos, puedes
+ejecutar `$ chmod 777 index.js`.
 
 #### npm bin y npm link
 
