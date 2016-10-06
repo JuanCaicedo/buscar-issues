@@ -13,3 +13,10 @@ commander para especificar que `buscar-issues` tiene que recibir un argumento
 `-r` o `--repo` que sea el nombre del usuario y repo (por ejemplo
 juancaicedo/buscar-issues). Después lee el repo desde commander y imprímelo a la
 pantalla.
+
+Al final deberías poder ejecutar esto, y ver el mismo nombre imprimido al
+terminal
+
+```bash
+$ buscar-issues --repo spanishdict/example-dfp-line-item-generator
+```
