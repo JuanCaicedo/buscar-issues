@@ -14,7 +14,7 @@ commander para especificar que `buscar-issues` tiene que recibir un argumento
 juancaicedo/buscar-issues). Después lee el repo desde commander y imprímelo a la
 pantalla.
 
-Al final deberías poder ejecutar esto, y ver el mismo nombre imprimido al
+Al final deberías poder ejecutar esto, y ver el mismo nombre impreso en la
 terminal
 
 ```bash
