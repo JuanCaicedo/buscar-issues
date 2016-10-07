@@ -23,11 +23,11 @@ ese repo y imprimirlos a la pantalla.
 Puedes ensayar esto con un solo repo haciendo
 
 ```bash
-$ echo "spanishdict/example-dfp-line-item-generator" | gh-pr
+$ echo "spanishdict/example-dfp-line-item-generator" | buscar-issues
 ```
 
 Y para varios repos
 
 ```bash
-$ cat repos.txt | gh-pr
+$ cat repos.txt | buscar-issues
 ```
