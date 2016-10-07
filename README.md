@@ -19,4 +19,5 @@ terminal
 
 ```bash
 $ buscar-issues --repo spanishdict/example-dfp-line-item-generator
+spanishdict/example-dfp-line-item-generator
 ```
